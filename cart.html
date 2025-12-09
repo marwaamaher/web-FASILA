@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cart</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/profile.css">
+  
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Navbar -->
+
+</head>
+
+<!-- ... باقي الـ <head> بدون تغيير -->
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="./index.html"><img src="Uploads/logo 1 .png" alt="Jasila Logo"></a>
+    </div>
+
+    <!-- Hamburger Menu (Mobile) -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./shop.html">Shop</a></li>
+      <li><a href="./plants.html">Plants</a></li>
+      <li><a href="./contactUS.html">Contact Us</a></li>
+    </ul>
+
+    <!-- User Actions -->
+    <div class="user-actions">
+      <a href="./profile.html" class="profile"><img src="Uploads/profile.png" alt="Profile">
+        Profile</a>
+      <a href="./cart.html" class="active"><img src="Uploads/cart.png" alt="Cart"> Cart</a>
+    </div>
+  </nav>
+  <!-- Header -->
+  <header class="main-header">
+    <img src="Uploads/home_1.jpg" alt="Garden" class="header-image" />
+    <div class="header-overlay">
+      <h1>CART</h1>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="./index.html" class="breadcrumb-link">
+      <i class="fa-solid fa-house"></i> Home
+    </a>
+    <span class="breadcrumb-separator">›</span>
+    <span class="breadcrumb-current">Cart</span>
+  </div>
+
+  <!-- Cart Section -->
+  <main class="main-content">
+    <div class="cart-container">
+
+      <!-- Table Header -->
+      <div class="cart-header">
+        <span>Product</span>
+        <span>Quantity</span>
+        <span>Price</span>
+        <span>Total</span>
+        <span></span>
+      </div>
+      <hr />
+
+      <!-- Items will be inserted here -->
+      <div id="cartItems" class="cart-items">
+        <!-- الكروت هتيجي من الـ JS -->
+      </div>
+
+      <!-- Cart Summary -->
+      <div class="cart-summary">
+        <h2>CART TOTAL</h2>
+        <hr />
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="subtotal">0 EGP</span>
+        </div>
+        <hr />
+        <div class="summary-row">
+          <span>Shipping</span>
+          <span id="shipping">50 EGP</span>
+        </div>
+        <div class="summary-row total-row">
+          <span>Order Total</span>
+          <span id="total">50 EGP</span>
+        </div>
+        <div class="confirm-center">
+          <button class="confirm-order-btn" id="confirmOrderBtn" disabled>Confirm Order</button>
+        
+        </div>
+      </div>
+    </div>
+  </main>
+   <div id="toast" class="toast"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- خليه زي ما هو، ده مش هيتغير -->
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
+

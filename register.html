@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-side">
+            <img src="Uploads/login_background.jpg" alt="Login Background">
+        </div>
+        <div class="right-side">
+            <form action="" method="POST" id="registerForm">
+                <h2>Register</h2>
+
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" required />
+
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" required />
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" required />
+
+                <label for="password">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" name="password" id="password" placeholder="***************" required>
+                    <span class="toggle" onclick="togglePassword(this, 'password')">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </span>
+                </div>
+
+                <label for="confirmPassword">Confirm Password</label>
+                <div class="password-wrapper">
+                    <input type="password" name="confirm_password" id="confirmPassword"  placeholder="***************" required>
+                    <span class="toggle" onclick="togglePassword(this, 'confirmPassword')">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </span>
+                </div>
+
+                <button type="submit">Register</button>
+
+                <p>Do you have an account? <a href="./login.html">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>

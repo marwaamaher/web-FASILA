@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>plant</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/shop.css">
+  <link rel="stylesheet" href="css/favourite.css">
+  <link rel="stylesheet" href="css/plants.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Navbar -->
+ 
+</head>
+
+<body>
+ <nav class="navbar">
+    <div class="logo">
+      <a href="./index.html"><img src="Uploads/logo 1 .png" alt="Jasila Logo"></a>
+    </div>
+
+    <!-- Hamburger Menu (Mobile) -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./shop.html">Shop</a></li>
+      <li><a href="./plants.html"class="active">Plants</a></li>
+      <li><a href="./contactUS.html">Contact Us</a></li>
+    </ul>
+
+    <!-- User Actions -->
+    <div class="user-actions">
+      <a href="./profile.html" class= "profile"><img src="Uploads/profile.png" alt="Profile">
+        Profile</a>
+      <a href="./cart.html" class="cart"><img src="Uploads/cart.png" alt="Cart"> Cart</a>
+    </div>
+  </nav>
+  <!--main content-->
+  <main class="main-content">
+    <header class="main-header">
+      <img src="Uploads/home_1.jpg" alt="Garden" class="header-image">
+      <div class="header-overlay">
+        <h1>PLANTS</h1>
+        <div class="search-container">
+          
+  <button class="search-button">
+    
+    <i class="fa fa-search"></i>
+  </button>
+  <input type="text" id="plantSearch" placeholder="Search For Plants" class="search-input" />
+        </div>
+      </div>
+    </header>
+    
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="./index.html" class="breadcrumb-link">
+        <i class="fa-solid fa-house"></i>Home
+      </a>
+      <span class="breadcrumb-separator">›</span>
+      <span class="breadcrumb-current">Plant</span>
+    </div>
+    <hr>
+  </main>
+  <!-- container -->
+
+  <div class="container">
+   
+    <!-- Sidebar -->
+<aside class="catg-sidebar">
+  <h3>CATEGORIES</h3>
+<label><input type="checkbox" value="Fruits" class="category-filter"/>Fruits</label>
+<label><input type="checkbox" value="Vegetables" class="category-filter"/>Vegetables</label>
+<label><input type="checkbox" value="Leafy" class="category-filter"/>Leafy Plants</label>
+<label><input type="checkbox" value="Ornamental" class="category-filter"/>Ornamental</label>
+</aside>
+
+
+
+
+    <main class="content">
+<div class="plant-grid" id="plantGrid"></div>
+
+
+        
+
+      <!-- Pagination -->
+<div id="plantGrid"></div>
+<div id="plantPagination" class="pagination"></div>
+
+    </main>
+
+
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo and Description -->
+      <div class="footer-column">
+        <a href="#"><img src="Uploads/logo 1 .png" alt="logo" class="footer-logo"></a>
+        <p class="footer-description">
+          Fasila helps you grow and nurture your plants with ease, providing high-quality tools, expert guidance, and
+          sustainable solutions for a greener world.
+        </p>
+        <div class="social-icons">
+          <a href="#"><img src="Uploads/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="Uploads/instgram.png" alt="Instagram" /></a>
+          <a href="#"><img src="Uploads/watsapp.png" alt="WhatsApp" /></a>
+          <a href="#"><img src="Uploads/be.png" alt="Behance" /></a>
+          <a href="#"><img src="Uploads/linkedin.png" alt="LinkedIn" /></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h4>Quick Link</h4>
+        <div class="quick-links-grid">
+          <ul class="footer-links">
+            <li><a href="#">Purchase</a></li>
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">Return</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Orders</a></li>
+          </ul>
+          <ul class="footer-links">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Policies</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <!-- Best Seller -->
+      <div class="footer-column">
+        <h4>Best Seller</h4>
+        <div class="best-seller-item">
+          <img src="Uploads/round_pot.png" alt="Round Pot" />
+          <div>
+            <p>Round-Pot</p>
+            <span>150 EGP</span>
+          </div>
+        </div>
+        <div class="best-seller-item">
+          <img src="Uploads/yellow_pot.png" alt="Yellow Pot" />
+          <div>
+            <p>Yellow-Pot</p>
+            <span>120 EGP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <div class="contact-info">
+          <p><span>Address:</span> 25 Nile Road, Mansoura, Egypt</p>
+          <p><span>Phone:</span> +1 234 122 122</p>
+          <p><span>Email:</span> Support@Fasila.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Fasila. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script src="js/script.js"></script>
+<script src="js/plants.js"></script>
+</body>
+
+
+</html>
