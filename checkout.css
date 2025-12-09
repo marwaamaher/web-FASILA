@@ -1,0 +1,76 @@
+.checkout-wrapper {
+  display: flex;
+  gap: 40px;
+  padding: 70px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.checkout-left {
+  flex: 2;
+}
+.checkout-left h2{
+  text-align: left;
+  color: #000;
+  margin-left: 50px;
+}
+.checkout-right {
+  flex: 1;
+}
+
+.order-summary {
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 400px;
+  border-radius: 10px;
+  background-color: transparent; /* شيلنا الخلفية والحدود */
+}
+
+.order-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.order-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.order-header {
+  font-size: 20px;
+  color: #000;
+}
+
+.product-row {
+  font-size: 14px;
+  color: #888; /* رمادي فاتح */
+}
+
+.total-row {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.place-order-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.place-order-btn {
+  padding: 12px 30px;
+  background-color: #00695c;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #004d40;
+}

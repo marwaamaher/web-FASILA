@@ -1,0 +1,415 @@
+/* Header Styles */
+.main-header {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+
+}
+
+.Home-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* cards*/
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -200px;
+    padding: 50px;
+    position: relative;
+
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+
+}
+
+.card img {
+    width: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* about */
+.about-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+}
+
+
+.about-item img {
+    width: 90px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+.about-item h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+
+.about-item p {
+    font-size: 16px;
+    color: #555;
+    max-width: 100%;
+    text-align: left;
+}
+
+/* new arrival */
+.new-arrivals {
+    text-align: center;
+    background-color: #f3f6f4;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.new-arrivals h2 {
+    color: #00695c;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.new-arrivals p {
+    color: #555;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+
+
+.product-card span {
+    color: #333;
+    font-weight: 600;
+}
+.product-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px; /* نفس عرض الكارد */
+}
+
+.product-name {
+  font-size: 16px;
+  color: #888;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.product-price {
+  color: #333;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.view-all-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #00695c;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.view-all-btn:hover {
+    background-color: #004d40;
+    text-decoration: none;
+}
+
+/* contact us */
+
+.contact-section {
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    margin-left: 30px;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.input-row input {
+    flex: 1;
+    min-width: 100px;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border: none;
+    background-color: #eaf2ef;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+    resize: none;
+}
+
+form textarea {
+    height: 120px;
+}
+
+form button {
+    background-color: #00695c;
+    color: #fff;
+    padding: 12px 25px;
+    margin-left: 40px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #004d40;
+}
+
+.contact-map {
+    flex: 1;
+    min-width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* app section */
+.app-section {
+    padding: 0px 20px;
+    background-color: #fff;
+}
+
+.app-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.app-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.app-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.app-text {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.app-text h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.app-text p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.app-buttons img {
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.app-buttons img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: left;
+    }
+
+    .about-item {
+        align-items: flex-start;
+
+    }
+
+    .about-item p {
+        max-width: 100%;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        padding: 20px 15px;
+        gap: 25px;
+        margin-top: 0;
+    }
+
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        height: 40vh;
+    }
+
+    .new-arrivals,
+    .contact-section,
+    .app-section,
+    .about-us {
+        padding: 20px 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .contact-map {
+        height: 300px;
+    }
+
+    .contact-form h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+ 
+}

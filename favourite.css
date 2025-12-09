@@ -1,0 +1,144 @@
+.top-section {
+  position: relative;
+}
+
+.plant-card {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  padding: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 0 transparent;
+  transition: 0.3s ease;
+  text-align: center;
+  background-color: #fff;
+
+}
+
+.plant-card:hover {
+  outline: 2px solid #c2d0ce;
+  box-shadow: 0 4px 10px rgba(137, 127, 127, 0.918);
+}
+
+.plant-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.icons {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  display: none;
+}
+
+.plant-card:hover .icons {
+  display: flex;
+  gap: 6px;
+}
+
+.icon-btn {
+  background-color: #f4fdfc;
+  border: 2px solid #00796b;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.icon-btn i {
+  color: #00695c;
+  font-size: 20px;
+}
+
+.icon-btn:hover {
+  background-color: #e0f2f1;
+}
+
+.fav-btn.active i {
+  color: #00695c;
+}
+
+.plant-name {
+  font-weight: bold;
+  margin: 8px 0 0;
+}
+
+.plant-type {
+  color: gray;
+  margin-top: 4px;
+}
+
+
+.bottom-section {
+  padding: 10px;
+}
+
+
+
+/* add card*/
+.plant-card.add-card {
+  width: 170;
+  max-width: 250px;
+  height: 170px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  box-sizing: border-box;
+  margin:40px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.plant-card.add-card:hover {
+  background-color: #e6f7f5;
+  transform: scale(1.03);
+}
+
+.add-icon {
+  font-size: 40px;
+  color: #00695c;
+  margin-bottom: 10px;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.plant-card.removed {
+  opacity: 0.4;
+  pointer-events: none;
+  filter: grayscale(50%);
+  transition: opacity 0.3s;
+}
+
+@media (max-width: 768px) {
+  .plant-card {
+    max-width: 45%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .plant-card {
+    max-width: 100%;
+    height: 180px;
+  }
+
+  .add-icon {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-container {
+    padding: 10px;
+  }
+}

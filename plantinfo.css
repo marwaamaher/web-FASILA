@@ -1,0 +1,114 @@
+
+
+.plant-info-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  margin-left:100px;
+}
+
+.image-section {
+  position: relative;
+}
+
+.plant-img {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+/* منطقة الأيقونات */
+.icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 12px;
+}
+
+/* شكل الزرار */
+.icon-box {
+    width: 36px;
+    height: 36px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+/* حجم الأيقونة أصغر */
+.icon-box i {
+  font-size: 16px;
+  color: #077864;
+}
+
+/* تأثير hover */
+.icon-box:hover {
+  border-color: #2e7d32;
+  background-color: #f1f8e9;
+}
+
+.icon-box:hover i {
+  color: green;
+}
+
+
+.info-section {
+  max-width: 600px;
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.details-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.details-list img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.tab-links {
+  display: flex;
+  gap: 200px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.tab-link {
+  text-decoration: none !important;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+   transition: color 0.3s ease, border-color 0.3s ease;
+  padding: 5px 10px;
+}
+
+.tab-link:hover {
+  color: #00695c;
+}
+
+.tab-link.active {
+  color: #00695c;
+  border-bottom: 2px solid #00695c;
+}
+
+.tab-content {
+    margin-bottom:150px;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+}
